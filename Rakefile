@@ -8,7 +8,7 @@ require_relative %(./lib/stitches/synthesizer/terraform/version)
 
 $_c = {
   pkg_repo: %(https://rubygems.pkg.github.com/t3rro),
-  pkg_path: %(pkg/stitches-synthesizer-#{Stitches::Synthesizer::Terraform::VERSION}.gem)
+  pkg_path: %(pkg/stitches-terraform-synthesizer-#{Stitches::Synthesizer::Terraform::VERSION}.gem)
 }
 
 RSpec::Core::RakeTask.new(:spec)
@@ -35,6 +35,7 @@ end
 # Github Packages publishing
 namespace :gem do
   task :push do
+    mkdir_p %(pkg)
     Rake::Task[%(build)].invoke
     cmd = []
     cmd << %(gem push)
