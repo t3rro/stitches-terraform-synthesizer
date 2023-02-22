@@ -301,6 +301,16 @@
     };
     version = "0.48.0";
   };
+  stitches-synthesizer = {
+    groups = ["production"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "10lpixxf7060spdvrkbglr7lkhd86m8i34m3g8sjkw6cbiw62myk";
+      type = "gem";
+    };
+    version = "0.0.5";
+  };
   thor = {
     groups = ["default" "development"];
     platforms = [];
