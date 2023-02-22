@@ -13,7 +13,9 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    nokogiri (1.14.2-x86_64-linux)
+    mini_portile2 (2.8.1)
+    nokogiri (1.14.2)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.2.1.0)
@@ -74,7 +76,7 @@ GEM
       webrick (~> 1.7.0)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   keycutter
@@ -85,4 +87,4 @@ DEPENDENCIES
   yard
 
 BUNDLED WITH
-   2.4.6
+   2.1.4
