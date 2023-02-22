@@ -17,22 +17,5 @@ Gem::Specification.new do |spec|
   spec.require_paths         = [%(lib)]
   spec.required_ruby_version = %(>= #{`cat .ruby-version`})
 
-  #############################################################################
-  # Dependencies
-  #############################################################################
-
-  %i[
-    rubocop-rspec
-    rubocop-rake
-    solargraph
-    keycutter
-    rubocop
-    rspec
-    rake
-    yard
-  ].each do |gem|
-    spec.add_development_dependency(gem)
-  end
-
   spec.metadata[%(rubygems_mfa_required)] = %(true)
 end
